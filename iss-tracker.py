@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # A Python 3 script that utilizes urllib3 and pygeocoder to pull
 # the most recent ISS location data from the Open-Notify.org API.
 
@@ -30,5 +32,4 @@ try:
     location = Geocoder.reverse_geocode(latitude, longitude)
     print('Location: ' + str(location))
 except GeocoderError:
-    print('The coordinates could not be reverse geocoded.')
-    
+    print('The coordinates could not be reverse geocoded.')    
